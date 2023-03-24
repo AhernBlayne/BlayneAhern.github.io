@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
+//
+$('#elemId').width();
 
 @Component({
 

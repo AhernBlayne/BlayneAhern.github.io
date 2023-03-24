@@ -7,7 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { DiaryComponent } from './diary/diary.component';
 import {MatChipsModule} from '@angular/material/chips'; 
 import {MatExpansionModule} from '@angular/material/expansion'; 
-
+import * as $ from 'jquery';
+//
+$('#elemId').width();
 
 @NgModule({
   declarations: [

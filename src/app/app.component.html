@@ -12,9 +12,27 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
+          <script>
+            $(document).ready(function () {
+                var menuTrigger = false;
+                $(document).keypress(function (e) {
+                    if (e.which == 13) {
+                        if (menuTrigger == false) {
+                            $("h2").fadeIn(500);
+                            menuTrigger = true;
+                        }
+                        else if (menuTrigger == true) {
+                            $("h2").fadeOut(500);
+                            menuTrigger = false;
+                        }
+                    }
+                });
+            });
+        </script>
     </head>
     <body class="w3-light-grey">
     
@@ -54,6 +72,8 @@
                 <mat-chip-option color="w3-teal">Express</mat-chip-option>
                 <mat-chip-option color="w3-teal">Angular</mat-chip-option>
                 <mat-chip-option color="w3-teal">Node</mat-chip-option>
+                <mat-chip-option color="w3-teal">PUG</mat-chip-option>
+                <mat-chip-option color="w3-teal">JQuery</mat-chip-option>
               </mat-chip-listbox>
               <div class="w3-light-grey w3-round-xlarge w3-small">
                
@@ -96,12 +116,21 @@
               <hr>
             </div>
             <div class="w3-container">
+              <h5 class="w3-opacity"><b>IT Support Engineer</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2023<span class="w3-tag w3-teal w3-round">Current</span></h6>
+              <p>I am currently working for PFH as an IT Support Engineer setting up desktops and laptops for Eli Lilly and Virgin Media.</p>
+              <hr>
+            </div>  
+            <div class="w3-container">
               <h5 class="w3-opacity"><b>Barista / Galway Races</b></h5>
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016</h6>
               <p>Spent days stocking supplies, Cleaning left over dishes, and serving customers.</p>
               <hr>
             </div>    
+  
           </div>
+
+        
           
     
           <div class="w3-container w3-card w3-white">
@@ -147,7 +176,6 @@
         
       <!-- End Grid -->
       </div>
-      
       <!-- End Page Container -->
     </div>
     
